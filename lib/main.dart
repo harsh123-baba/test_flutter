@@ -5,6 +5,7 @@ import "package:test_flutter/login_page.dart";
 import 'package:google_fonts/google_fonts.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import "package:test_flutter/utils/routes.dart";
+import "package:test_flutter/widgets/themes.dart";
 
 void main() {
   runApp(MyApp());
@@ -26,18 +27,14 @@ class MyApp extends StatelessWidget {
     // // const vs final -> we can edit final "List". we can't edit const "list"
     return MaterialApp(
         themeMode: ThemeMode.light,
-        theme: ThemeData(
-          primaryColor: Color(0x386BF6),
-          fontFamily: GoogleFonts.lato().fontFamily,
-        ),
+        theme: MyTheme.lightTheme(Context),
+        debugShowCheckedModeBanner: false,
         darkTheme: ThemeData(brightness: Brightness.dark),
-        // initialRoute: "/",
+        initialRoute: MyRoutes.homeRoute,
         routes: {
           MyRoutes.inRoute: (context) => LoginPage(),
           MyRoutes.loginRoute: (context) => LoginPage(),
           MyRoutes.homeRoute: (context) => HomePage()
-        }
-        // home: HomePage(),
-        );
+        });
   }
 }

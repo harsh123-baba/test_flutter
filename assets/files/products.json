@@ -1,0 +1,41 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "IPhone",
+            "desc": "IPhone built not for you",
+            "price": 800000,
+            "color": "Black",
+            "image":
+                "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png"
+        },
+        {
+            "id": 2,
+            "name": "IPhone2",
+            "desc": "IPhone built not for you",
+            "price": 800000,
+            "color": "Black",
+            "image":
+                "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png"
+        },
+        {
+            "id": 3,
+            "name": "IPhone3",
+            "desc": "IPhone built not for you",
+            "price": 800000,
+            "color": "Black",
+            "image":
+                "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png"
+        },
+        {
+            "id": 4,
+            "name": "IPhone4",
+            "desc": "IPhone built not for you",
+            "price": 800000,
+            "color": "Black",
+            "image":
+                "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png"
+        }
+    ]
+
+}
