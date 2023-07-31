@@ -114,7 +114,10 @@ class CatalogItem extends StatelessWidget {
               buttonPadding: Vx.mH8,
               children: [
                 "\$${catalog.price}".text.bold.xl.make(),
-                ElevatedButton(onPressed: () {}, style: ButtonStyle(backgroundColor: ),child: "Buy".text.make())
+                ElevatedButton(
+                    onPressed: () {},
+                    style: ButtonStyle(backgroundColor: MyTheme.creamColor),
+                    child: "Buy".text.make())
               ],
             )
           ],
