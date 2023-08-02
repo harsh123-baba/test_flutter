@@ -1,6 +1,6 @@
 import "package:flutter/material.dart";
-import "package:test_flutter/home_page.dart";
-import "package:test_flutter/login_page.dart";
+import 'package:test_flutter/pages/home_widgets/home_page.dart';
+import 'package:test_flutter/pages/login_page.dart';
 // fonts and font awesome
 import 'package:google_fonts/google_fonts.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';

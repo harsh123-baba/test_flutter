@@ -15,6 +15,6 @@ class MyTheme {
       ThemeData(brightness: Brightness.dark);
 
   // colors
-  static Color creamColor = Color(0xFE9A42);
+  static Color creamColor = Color(0xFFF5F5F5);
   static Color darkBluishColor = Color(0xff403b58);
 }
