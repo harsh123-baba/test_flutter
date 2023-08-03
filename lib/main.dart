@@ -16,7 +16,7 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
-  Widget build(BuildContext Context) {
+  Widget build(BuildContext context) {
     // int days = 30;
     // String name = "Harshit";
     // double pi = 3.14;
@@ -28,10 +28,10 @@ class MyApp extends StatelessWidget {
     // const piConst = 3.14; // we cannot change this
     // // const vs final -> we can edit final "List". we can't edit const "list"
     return MaterialApp(
-        themeMode: ThemeMode.light,
-        theme: MyTheme.lightTheme(Context),
+        themeMode: ThemeMode.system,
+        theme: MyTheme.lightTheme(context),
+        darkTheme: MyTheme.darkTheme(context),
         debugShowCheckedModeBanner: false,
-        darkTheme: ThemeData(brightness: Brightness.dark),
         initialRoute: MyRoutes.homeRoute,
         routes: {
           MyRoutes.loginRoute: (context) => LoginPage(),
