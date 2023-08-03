@@ -1,5 +1,7 @@
 import "package:flutter/material.dart";
-import 'package:test_flutter/pages/home_widgets/home_page.dart';
+import 'package:test_flutter/pages/cart_page.dart';
+import 'package:test_flutter/pages/home_details.dart';
+import 'package:test_flutter/pages/home_page.dart';
 import 'package:test_flutter/pages/login_page.dart';
 // fonts and font awesome
 import 'package:google_fonts/google_fonts.dart';
@@ -32,9 +34,9 @@ class MyApp extends StatelessWidget {
         darkTheme: ThemeData(brightness: Brightness.dark),
         initialRoute: MyRoutes.homeRoute,
         routes: {
-          MyRoutes.inRoute: (context) => LoginPage(),
           MyRoutes.loginRoute: (context) => LoginPage(),
-          MyRoutes.homeRoute: (context) => HomePage()
+          MyRoutes.homeRoute: (context) => HomePage(),
+          MyRoutes.cartRoute: (context) => CartPage(),
         });
   }
 }

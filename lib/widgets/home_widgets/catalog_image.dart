@@ -15,6 +15,6 @@ class CatalogImage extends StatelessWidget {
         .color(MyTheme.creamColor)
         .make()
         .p16()
-        .w40(context);
+        .w32(context);
   }
 }

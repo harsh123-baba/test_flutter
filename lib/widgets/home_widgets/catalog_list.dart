@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:test_flutter/models/catalog.dart';
-import 'package:test_flutter/pages/home_widgets/home_details.dart';
+import 'package:test_flutter/widgets/home_widgets/catalog_image.dart';
 import "package:test_flutter/widgets/themes.dart";
 import 'package:velocity_x/velocity_x.dart';
+import 'package:test_flutter/pages/home_details.dart';
 
 import 'package:flutter/material.dart';
-import 'package:test_flutter/pages/home_widgets/catalog_image.dart';
 import "package:test_flutter/widgets/themes.dart";
 import "package:test_flutter/widgets/item_widget.dart";
 import 'package:velocity_x/velocity_x.dart';
@@ -56,14 +56,14 @@ class CatalogItem extends StatelessWidget {
               alignment: MainAxisAlignment.spaceBetween,
               buttonPadding: EdgeInsets.zero,
               children: [
-                "\$${catalog.price}".text.bold.xl.make(),
+                "\$${catalog.price}".text.bold.lg.make(),
                 ElevatedButton(
                     onPressed: () {},
                     style: ButtonStyle(
                         shape: MaterialStateProperty.all(StadiumBorder()),
                         backgroundColor:
                             MaterialStateProperty.all(MyTheme.darkBluishColor)),
-                    child: "Buy".text.make())
+                    child: "Add to cart".text.make())
               ],
             ).pOnly(right: 8)
           ],
